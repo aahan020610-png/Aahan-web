@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aahan | Professional Websites for Local Businesses</title>
+
+<meta name="description" content="Aahan creates modern, responsive websites for local businesses in Pune. Affordable pricing, fast delivery, and professional web design.">
+<meta name="keywords" content="web designer Pune, website developer Pune, business website, responsive website, local business websites">
+<meta name="author" content="Aahan">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --primary:#e53935;
+    --dark:#111111;
+    --light:#ffffff;
+    --gray:#f5f5f5;
+    --text:#444;
+    --shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    color:var(--text);
+    background:white;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:90px 0;
+}
+
+h1,h2,h3{
+    font-family:'Poppins',sans-serif;
+    color:var(--dark);
+}
+
+.btn{
+    display:inline-block;
+    background:var(--primary);
+    color:white;
+    padding:14px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+header{
+    position:fixed;
+    width:100%;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    color:var(--primary);
+    font-family:'Poppins',sans-serif;
+    font-weight:800;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--dark);
+    font-weight:500;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    padding-top:100px;
+}
+
+.hero-content{
+    max-width:800px;
+    margin:auto;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    margin-bottom:20px;
+}
+
+.hero span{
+    color:var(--primary);
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2.3rem;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.about{
+    background:var(--gray);
+}
+
+.contact-wrapper{
+    max-width:700px;
+    margin:auto;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input, textarea{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:1rem;
+}
+
+textarea{
+    min-height:150px;
+}
+
+footer{
+    background:var(--dark);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.whatsapp-btn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background:#25D366;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:white;
+    font-size:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+    z-index:999;
+}
+
+.fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.nav-links{
+    gap:15px;
+    font-size:0.9rem;
+}
+
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">Aahan</div>
+
+<div class="nav-links">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="container hero-content fade">
+<h1>Professional <span>Websites</span> For Local Businesses</h1>
+
+<p>
+Helping businesses in Pune build a strong online presence with modern,
+responsive and professional websites.
+</p>
+
+<a href="#contact" class="btn">Get a Free Quote</a>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+
+<div class="section-title fade">
+<h2>Services</h2>
+</div>
+
+<div class="services-grid">
+
+<div class="card fade">
+<h3>Business Websites</h3>
+<p>Professional websites that help your business attract customers online.</p>
+</div>
+
+<div class="card fade">
+<h3>Landing Pages</h3>
+<p>High-converting landing pages designed for lead generation.</p>
+</div>
+
+<div class="card fade">
+<h3>Website Redesign</h3>
+<p>Modernize your existing website with a clean and professional look.</p>
+</div>
+
+<div class="card fade">
+<h3>Mobile Responsive</h3>
+<p>Your website will look perfect on phones, tablets and desktops.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="container">
+
+<div class="section-title fade">
+<h2>About Me</h2>
+</div>
+
+<div class="fade" style="max-width:800px;margin:auto;text-align:center;">
+<p>
+Hi, I'm Aahan. I help local businesses establish a strong digital presence
+through clean, modern and responsive websites.
+<br><br>
+My goal is to provide affordable, professional websites that help businesses
+build trust and attract more customers online.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+
+<div class="section-title fade">
+<h2>Contact Me</h2>
+</div>
+
+<div class="contact-wrapper fade">
+
+<form id="contactForm">
+<input type="text" id="name" placeholder="Your Name" required>
+
+<input type="email" id="email" placeholder="Your Email" required>
+
+<input type="text" id="business" placeholder="Business Name">
+
+<textarea id="message" placeholder="Tell me about your project..." required></textarea>
+
+<button type="submit" class="btn">Send Inquiry</button>
+</form>
+
+<br>
+
+<div style="text-align:center;">
+<p><strong>Email:</strong> aahan020620@gmail.com</p>
+<p><strong>WhatsApp:</strong> +91 7030430554</p>
+<p><strong>Location:</strong> Pune, Maharashtra</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Aahan. All Rights Reserved.</p>
+</footer>
+
+<a
+class="whatsapp-btn"
+href="https://wa.me/917030430554"
+target="_blank"
+title="Chat on WhatsApp">
+💬
+</a>
+
+<script>
+
+// Contact Form
+
+document.getElementById('contactForm').addEventListener('submit', function(e){
+
+e.preventDefault();
+
+const name = document.getElementById('name').value;
+const email = document.getElementById('email').value;
+const business = document.getElementById('business').value;
+const message = document.getElementById('message').value;
+
+const subject = encodeURIComponent("New Website Inquiry");
+const body = encodeURIComponent(
+`Name: ${name}
+
+Email: ${email}
+
+Business: ${business}
+
+Message:
+${message}`
+);
+
+window.location.href =
+`mailto:aahan020620@gmail.com?subject=${subject}&body=${body}`;
+
+});
+
+// Scroll Animation
+
+const observer = new IntersectionObserver((entries)=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+},{
+threshold:0.2
+});
+
+document.querySelectorAll('.fade').forEach(el=>{
+observer.observe(el);
+});
+
+</script>
+
+</body>
+</html>
